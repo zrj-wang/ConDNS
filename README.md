@@ -19,6 +19,7 @@ Loss Function:
 
  - [x] Uniform Negative Sampling
  - [x] Self-Adversarial Negative Sampling
+ - [x] QDDNS 
 
 **Usage**
 
