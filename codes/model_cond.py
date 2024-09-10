@@ -168,7 +168,8 @@ class Encoder(nn.Module):
         self.l1 = Block(in_ft, out_ft)
         self.l2 = Block(out_ft, out_ft)
 
-        self.res_conv = nn.Sequential(
+        self.\
+            res_conv = nn.Sequential(
             nn.Linear(out_ft, out_ft),
             nn.SiLU(),
             nn.Linear(out_ft, out_ft))
@@ -292,7 +293,6 @@ class Diffusion_Cond(nn.Module):
             emb = self.p_sample(model, emb, torch.full((b,), i, dtype=torch.long), y, i)
             embs.append(emb)
 
-        # 对最终的嵌入进行归一化处理
         embs = [F.normalize(e, dim=-1) for e in embs]
         embs = embs[::-1]
         steps = list(range(1, 50, 2))[:20]
