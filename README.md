@@ -1,6 +1,4 @@
-# Query-Driven Diffusion: Efficient Negative Sampling for knowledge graph embedding with Conditional Models
-
-
+# Efficient Negative Sampling for Knowledge Graph Embedding with Conditional Diffusion Models
 **Implemented features**
 
 Models:
